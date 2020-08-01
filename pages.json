@@ -1,0 +1,104 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "NEUQ教育平台",
+				"navigationBarBackgroundColor": "#B2B2B2",
+				"backgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/ground/ground",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "广场",
+				"navigationBarBackgroundColor": "#B2B2B2",
+				"backgroundColor": "#FFFFFF"
+			}
+		},{
+			"path": "pages/me/me",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#B2B2B2",
+				"backgroundColor": "#FFFFFF"
+			}
+		},{
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false //禁用原生导航栏
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#B2B2B2",
+				"backgroundColor": "#FFFFFF"
+			}
+		},{
+			"path": "pages/meInfo/meInfo",
+			"style": {
+				"app-plus": {
+				},
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "个人信息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"backgroundColor": "#FFFFFF"
+			}
+		},{
+			"path": "pages/regsister/res",
+			"style": {
+				"app-plus": {
+				},
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#B2B2B2",
+				"backgroundColor": "#FFFFFF"
+			}
+		}
+	],
+	//全局样式
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "NEUQ教育平台",
+		"navigationBarBackgroundColor": "#B2B2B2",
+		"backgroundColor": "#FFFFFF"
+	},
+	//底部导航栏
+	"tabBar":{
+		"color":"#77A695",
+		"selectedColor":"#D2ADEB",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"black",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+		        "text": "首页",
+				"iconPath":"static/images/index/index_1.png",
+				"selectedIconPath":"static/images/index/index_2.png"
+		    }, 
+			{
+		        "pagePath": "pages/ground/ground",
+		        "text": "广场",
+				"iconPath":"static/images/ground/ground_1.png",
+				"selectedIconPath":"static/images/ground/ground_2.png"
+			},
+			{
+			    "pagePath": "pages/me/me",
+			    "text": "我的",
+				"iconPath":"static/images/me/me_1.png",
+				"selectedIconPath":"static/images/me/me_2.png"
+			}
+		]
+	}
+}

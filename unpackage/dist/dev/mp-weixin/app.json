@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ground/ground",
+    "pages/me/me",
+    "pages/login/login",
+    "pages/meInfo/meInfo",
+    "pages/regsister/res"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "NEUQ教育平台",
+    "navigationBarBackgroundColor": "#B2B2B2",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#77A695",
+    "selectedColor": "#D2ADEB",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/index/index_1.png",
+        "selectedIconPath": "static/images/index/index_2.png"
+      },
+      {
+        "pagePath": "pages/ground/ground",
+        "text": "广场",
+        "iconPath": "static/images/ground/ground_1.png",
+        "selectedIconPath": "static/images/ground/ground_2.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/images/me/me_1.png",
+        "selectedIconPath": "static/images/me/me_2.png"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap87.json"
+}

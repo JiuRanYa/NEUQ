@@ -1,0 +1,50 @@
+.header{
+	padding: 0 20upx 120upx 50upx;
+	
+	padding: 25upx 20upx 20upx 50upx;
+	
+	width: 100%;
+	height: 200upx;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	justify-content: flex-start;
+	align-items: center;
+}
+.avatar{
+	height: 150upx;
+	width: 150upx;
+	border-radius: 50%;
+	/*防止头像挤压*/
+	flex-shrink: 0;
+	/*10%灰白度*/
+	filter: grayscale(10%);
+}
+
+.info_wrapper{
+	width: 80%;
+	height: 80%;
+	margin-left: 40upx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.regs_login{
+	margin-top: 30upx;
+	font-size: 17px;
+}
+
+.nickname{
+	font-size: 19px;
+	color: #777777;
+}
+.nav_info{
+	font-size: 15px;
+	color: #777777;
+}
+.setting{
+	height: 30upx;
+	width: 30upx;
+}

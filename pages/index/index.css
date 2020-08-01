@@ -1,0 +1,120 @@
+/*搜索框下选项start*/
+.navbar_study{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.flex-item{
+	width: 25%;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+.flex-item text{
+	font-size: small;
+}
+.navbar_image_study{
+	width: 100upx;
+	height: 100upx;
+	align-items: center;
+	border-radius: 50%;
+	margin-top: 30upx;
+	margin-bottom: 10upx;
+}
+.flex-item .navbar_image_study image{
+	width: 60upx;
+	height: 60upx;
+	margin: 21upx auto;
+}
+/*搜索框下选项end*/
+
+/*轮播图start*/
+.index_swiper{
+}
+.index_swiper swiper{
+	height: 380upx;
+}
+.index_swiper swiper-item image{
+	width: 100%;
+}
+/*轮播图end*/
+
+/*好课先看start*/
+.content_wrapper{
+	margin-top: 20upx;
+}
+
+.scroll{
+	width: 100%;
+	white-space: nowrap;
+}
+
+.class_recommand{
+	width: 70%;
+	height: 630upx;
+	margin-right: 25upx;
+	display: inline-block;
+	border-radius: 25upx;
+}
+.flex_control{
+	display: flex;
+	flex-direction: column;
+}
+.class_command_type{
+	margin-top: 30upx;
+	margin-bottom: 30upx;
+}
+.class_type{
+	margin-left: 40upx;
+	font-weight: 500;
+}
+.class_total{
+	font-size: 12px;
+	color: gray;
+	margin-top: 15upx;
+	margin-right: 30upx;
+}
+
+.class_command_type{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.class_recommand_detail{
+	display: flex;
+	flex-direction: row;
+	margin-top: 15upx;
+}
+.class_recommand_title{
+	margin-left: 25upx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.class_recommand_detail .class_image1{
+	height: 150upx;
+	width: 150upx;
+	background-color: #F1F1F1;
+	margin-left: 15upx;
+}
+
+.class_title{
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 20upx;
+}
+
+.class_num{
+	font-size: 24upx;
+	margin-bottom: 10upx;
+}
+
+
+.class_image2{
+	width: 40upx;
+	height: 40upx;
+}
+
+/*好课先看end*/
