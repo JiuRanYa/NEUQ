@@ -1,38 +1,66 @@
-.login_title {
-	width: 100%;
-	height: 150rpx;
-	color: #007AFF;
-	font-size: 30px;
-}
-.center_control{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
+.logo {
+		width: 100%;
+		height: 400rpx;
+		background-color: #007AFF;
+		overflow: hidden;
+		/* border-bottom: 1px solid #E6E6C9; */
+	}
 
-.info{
-	border: 1px solid red;
-	height: 100rpx;
-	width: 90%;
-	margin-top: 50rpx;
-	border-radius: 5px;
-}
-.info_input{
-	height: 100%;
-	margin-left: 10px;
-}
-.info_title{
-}
+	.logo image {
+		display: block;
+		width: 150rpx;
+		height: 150rpx;
+		margin: 200rpx auto 0;
+		border-radius: 50%;
 
-.submit_btn{
-	width: 50%;
-	margin-top: 20px;
-}
-.login_bottom{
-	display: flex;
-	flex-direction: row;
-	margin-top: 220rpx;
-}
+	}
 
+	.login_form {
+		margin-top: 100rpx;
+	}
 
+	.login_form input {
+		height: 40px;
+		line-height: 80rpx;
+		padding: 10px 30rpx;
+		border-bottom: 1px solid #E6E6C9;
+
+	}
+
+	.btn {
+		width: 90vw;
+		margin-top: 40rpx;
+		background-color: #55b9f3;
+	}
+
+	.oauth_wrapper {
+		margin: 100px;
+		height: 300rpx;
+		/* background-color: #09BB07; */
+	}
+
+	.oauth_title {
+		text-align: center;
+		font-size: 16px;
+		color: #ccc;
+	}
+
+	.oauth_img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.oauth_img image {
+		display: block;
+		width: 40px;
+		height: 40px;
+		padding: 20px;
+	}
+	.regsister{
+		margin-top: 30rpx;
+		text-align: end;
+		font-size: 15px;
+		color: #0A98D5;
+		
+	}
