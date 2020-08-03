@@ -1,0 +1,1 @@
+<view><view class="mySelector_wrapper"><image class="icon" src="{{images}}" mode></image><view class="Selector_title">{{''+mytitle+''}}</view></view></view>

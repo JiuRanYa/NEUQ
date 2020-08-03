@@ -1,0 +1,1 @@
+<view class="content_title_wrapper"><image src="{{images}}" mode></image><view class="content_title">{{''+title+''}}</view></view>

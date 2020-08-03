@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "NEUQ教育平台",
+  "navigationBarBackgroundColor": "#B2B2B2",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "uni-search-bar": "/components/uni-search-bar/uni-search-bar",
+    "index-title": "/components/index-title/index-title"
+  }
+}

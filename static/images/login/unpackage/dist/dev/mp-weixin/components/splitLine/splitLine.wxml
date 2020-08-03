@@ -1,0 +1,1 @@
+<block wx:if="{{color}}"><view class="split_line" style="{{(bgColor)}}"></view></block><block wx:else><view class="split_line" style="background-color:#EBF6F6;"></view></block>

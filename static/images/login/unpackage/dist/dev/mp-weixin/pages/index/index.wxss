@@ -1,0 +1,150 @@
+/*搜索框下选项start*/
+.navbar_study{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.flex-item{
+	width: 25%;
+	text-align: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.flex-item text{
+	font-size: small;
+}
+.navbar_image_study{
+	width: 100rpx;
+	height: 100rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-radius: 50%;
+	margin-top: 30rpx;
+	margin-bottom: 10rpx;
+}
+.flex-item .navbar_image_study image{
+	width: 60rpx;
+	height: 60rpx;
+	margin: 21rpx auto;
+}
+/*搜索框下选项end*/
+/*轮播图start*/
+.index_swiper{
+}
+.index_swiper swiper{
+	height: 380rpx;
+}
+.index_swiper swiper-item image{
+	width: 100%;
+}
+/*轮播图end*/
+/*好课先看start*/
+.content_wrapper{
+	margin-top: 20rpx;
+}
+.scroll{
+	width: 100%;
+	white-space: nowrap;
+}
+.class_recommand{
+	width: 70%;
+	height: 630rpx;
+	margin-right: 25rpx;
+	display: inline-block;
+	border-radius: 25rpx;
+}
+.flex_control{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.class_command_type{
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+}
+.class_type{
+	margin-left: 40rpx;
+	font-weight: 500;
+}
+.class_total{
+	font-size: 12px;
+	color: gray;
+	margin-top: 15rpx;
+	margin-right: 30rpx;
+}
+.class_command_type{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.class_recommand_detail{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	margin-top: 15rpx;
+}
+.class_recommand_title{
+	margin-left: 25rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.class_recommand_detail .class_image1{
+	height: 150rpx;
+	width: 150rpx;
+	background-color: #F1F1F1;
+	margin-left: 15rpx;
+}
+.class_title{
+	font-size: 18px;
+	font-weight: 500;
+	margin-top: 20rpx;
+}
+.class_num{
+	font-size: 24rpx;
+	margin-bottom: 10rpx;
+}
+.class_image2{
+	width: 40rpx;
+	height: 40rpx;
+}
+/*好课先看end*/
+
