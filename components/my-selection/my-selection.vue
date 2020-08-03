@@ -1,6 +1,6 @@
 <template name='my-selection'>
 	<view>
-		<view class="mySelector_wrapper">
+		<view class="mySelector_wrapper" @click="selecton_click">
 			<image :src="images" mode="" class="icon"></image>
 			<view class="Selector_title">
 				{{mytitle}}
@@ -17,6 +17,12 @@
 				images:'',
 				mytitle:''
 			};
+		},
+		methods:{
+			//传递父组件点击事件
+			selecton_click(){
+				this.$emit("selectClick")
+			}
 		},
 		props:{
 			imageSrc:{

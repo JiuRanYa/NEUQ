@@ -1,1 +1,1 @@
-<view><view class="mySelector_wrapper"><image class="icon" src="{{images}}" mode></image><view class="Selector_title">{{''+mytitle+''}}</view></view></view>
+<view><view data-event-opts="{{[['tap',[['selecton_click',['$event']]]]]}}" class="mySelector_wrapper" bindtap="__e"><image class="icon" src="{{images}}" mode></image><view class="Selector_title">{{''+mytitle+''}}</view></view></view>

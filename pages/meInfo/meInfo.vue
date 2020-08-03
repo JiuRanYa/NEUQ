@@ -15,7 +15,7 @@
 				昵称
 			</view>
 			<view class="options_nickname font-control">
-				久染
+				{{userInfo.data[0].user_nickname}}
 			</view>
 		</view>
 		<view class="options">
@@ -51,7 +51,7 @@
 				手机号
 			</view>
 			<view class="font-control">
-				132****5413
+				{{userInfo.data[0].user_phone}}
 			</view>
 		</view>
 		<splitLine></splitLine>
@@ -59,6 +59,10 @@
 			<view class="options_title">
 				我的二维码
 			</view>
+		</view>
+		
+		<view class="exit_login">
+			<button type="default" @click="clearStorage">退出登录</button>
 		</view>
 	</view>
 </template>
@@ -77,6 +81,7 @@
 				sex_options:["男","女"],
 				index:0,
 				date: currentDate,
+				userInfo:''
 			}
 		},
 		computed: {
@@ -108,6 +113,20 @@
 				day = day > 9 ? day : '0' + day;
 				return `${year}-${month}-${day}`;
 			},
+			//退出登录
+			clearStorage(){
+				uni.clearStorage();
+				uni.showToast({
+					title:'退出成功'
+				});
+				uni.switchTab({
+					url:'../me/me'
+				})
+			},
+		},
+		onShow(){
+			let userInfo = global.getUserInfo();
+			this.userInfo = userInfo;
 		}
 	}
 </script>

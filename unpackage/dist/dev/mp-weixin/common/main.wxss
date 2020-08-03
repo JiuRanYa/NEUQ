@@ -1,5 +1,5 @@
 
-.page {
+uni-page-wrapper{
 	background-color: #f7f7f7;
 }
 .page-fill{

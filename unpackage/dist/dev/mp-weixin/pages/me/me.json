@@ -3,6 +3,7 @@
   "navigationBarTitleText": "我的",
   "navigationBarBackgroundColor": "#B2B2B2",
   "backgroundColor": "#FFFFFF",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "split-line": "/components/splitLine/splitLine",
     "my-selection": "/components/my-selection/my-selection"

@@ -131,4 +131,15 @@
 	-webkit-align-items: center;
 	        align-items: center;
 }
+.exit_login{
+	margin-top: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+.exit_login button{
+}
 

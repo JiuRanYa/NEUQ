@@ -88,4 +88,11 @@
 	align-items: center;
 }
 
+.exit_login{
+	margin-top: 100rpx;
+	display: flex;
+	justify-content: center;
+}
+.exit_login button{
+}
 

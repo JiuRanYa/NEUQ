@@ -1,5 +1,5 @@
 <template>
-	<view class="page page-fill">
+	<view class="page">
 		<view class="header">
 			<view v-if="userIsLogin" @click="useInfo">
 				<image src="../../static/images/me/avatar.png" mode="" class="avatar" ></image>
@@ -10,10 +10,10 @@
 			
 			<view class="info_wrapper" v-if="userIsLogin">
 					<view class="nickname">
-						久染
+						{{userInfo.data[0].user_nickname}}
 					</view>
 					<view class="nav_info">
-						132****5842
+						{{process_phone}}
 					</view>
 			</view>
 			<view class="info_wrapper" v-else>
@@ -40,15 +40,30 @@
 		},
 		data(){
 			return{
-				userIsLogin:true
+				userIsLogin:false,
+				userInfo:'',
+				process_phone:''
 			};
 		},
 		methods: {
+			//点击头像进入用户信息
 			useInfo(){
 				uni.navigateTo({
 					url:'../meInfo/meInfo'
 				})
+			},
+			//手机号模糊处理
+		},
+		onShow() {
+			if(global.getUserInfo()){
+				this.userIsLogin = true;
+				this.userInfo = global.getUserInfo();
+			}else{
+				this.userIsLogin = false;
 			}
+			
+			let process_phone = global.phone_process();
+			this.process_phone = process_phone;
 		}
 	}
 </script>

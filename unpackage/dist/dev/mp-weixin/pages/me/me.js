@@ -94,10 +94,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   splitLine: function() {
-    return __webpack_require__.e(/*! import() | components/splitLine/splitLine */ "components/splitLine/splitLine").then(__webpack_require__.bind(null, /*! @/components/splitLine/splitLine.vue */ 45))
+    return __webpack_require__.e(/*! import() | components/splitLine/splitLine */ "components/splitLine/splitLine").then(__webpack_require__.bind(null, /*! @/components/splitLine/splitLine.vue */ 47))
   },
   mySelection: function() {
-    return __webpack_require__.e(/*! import() | components/my-selection/my-selection */ "components/my-selection/my-selection").then(__webpack_require__.bind(null, /*! @/components/my-selection/my-selection.vue */ 90))
+    return __webpack_require__.e(/*! import() | components/my-selection/my-selection */ "components/my-selection/my-selection").then(__webpack_require__.bind(null, /*! @/components/my-selection/my-selection.vue */ 76))
   }
 }
 var render = function() {
@@ -137,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni, global) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -179,16 +179,32 @@ var _default =
 
   data: function data() {
     return {
-      userIsLogin: true };
+      userIsLogin: false,
+      userInfo: '',
+      process_phone: '' };
 
   },
   methods: {
+    //点击头像进入用户信息
     useInfo: function useInfo() {
       uni.navigateTo({
         url: '../meInfo/meInfo' });
 
-    } } };exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+    }
+    //手机号模糊处理
+  },
+  onShow: function onShow() {
+    if (global.getUserInfo()) {
+      this.userIsLogin = true;
+      this.userInfo = global.getUserInfo();
+    } else {
+      this.userIsLogin = false;
+    }
+
+    var process_phone = global.phone_process();
+    this.process_phone = process_phone;
+  } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
 

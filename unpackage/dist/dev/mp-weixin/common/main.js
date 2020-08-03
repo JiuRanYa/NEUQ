@@ -88,18 +88,25 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni, global) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-global.isLogin = function () {
-  try {
-    var suid = uni.getStorageSync('suid');
-    var srand = uni.getStorageSync('srand');
-  } catch (e) {
-    //TODO handle the exception
-  }
-  if (suid == '' || srand == '') {
-    return false;
+//获取用户信息
+global.getUserInfo = function (key) {
+  var userInfo = uni.getStorageSync("globalUser");
+  if (userInfo == '') {
+    console.log(userInfo + "userInfo");
+    return null;
   } else {
-    return [suid, srand];
+    console.log(userInfo);
+    return userInfo;
   }
+};
+//
+global.phone_process = function () {
+  if (global.getUserInfo()) {
+    var phone = global.getUserInfo().data[0].user_phone;
+    var process_phone = phone.substr(0, 3) + '****' + phone.substr(7, 10);
+    return process_phone;
+  }
+
 };var _default =
 {
   onLaunch: function onLaunch() {
