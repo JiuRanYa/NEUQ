@@ -58,7 +58,7 @@
 				"backgroundColor": "#FFFFFF"
 			}
 		},{
-			"path": "pages/regsister/res",
+			"path": "pages/regsister/regsister",
 			"style": {
 				"app-plus": {
 				},
