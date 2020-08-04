@@ -1,3 +1,4 @@
+/*
 .login_title {
 	width: 100%;
 	height: 150rpx;
@@ -34,5 +35,72 @@
 	flex-direction: row;
 	margin-top: 220rpx;
 }
+*/
 
+.logo {
+	width: 100%;
+	height: 400rpx;
+	background-color: #007AFF;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/* border-bottom: 1px solid #E6E6C9; */
+}
 
+.logo image {
+	display: block;
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+}
+
+.login_form {
+}
+
+.login_form input {
+	height: 40px;
+	line-height: 80rpx;
+	padding: 10px 30rpx;
+	border-bottom: 1px solid #E6E6C9;
+
+}
+
+.btn {
+	width: 90vw;
+	margin-top: 40rpx;
+	background-color: #55b9f3;
+}
+
+.oauth_wrapper {
+	margin: 100px;
+	height: 300rpx;
+	/* background-color: #09BB07; */
+}
+
+.oauth_title {
+	text-align: center;
+	font-size: 16px;
+	color: #ccc;
+}
+
+.oauth_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.oauth_img image {
+	display: block;
+	width: 40px;
+	height: 40px;
+	padding: 20px;
+}
+.regsister{
+	margin-top: 30rpx;
+	text-align: end;
+	font-size: 15px;
+	color: #0A98D5;
+	margin-right: 50upx;
+}

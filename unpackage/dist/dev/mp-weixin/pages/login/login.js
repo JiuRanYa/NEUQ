@@ -155,12 +155,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
-    return {};
+    return {
+      hasProvider: false };
 
-
+  },
+  onLoad: function onLoad() {
+    this.initProvider();
   },
   methods: {
     formSubmit: function formSubmit(e) {
@@ -195,7 +222,98 @@ var _default =
           console.log("发送失败");
         } });
 
-    } } };exports.default = _default;
+    },
+    initProvider: function initProvider() {var _this = this;
+      var filters = ['qq'];
+      uni.getProvider({
+        service: 'oauth',
+        success: function success(res) {
+          if (res.provider && res.provider.length) {
+            for (var i = 0; i < res.provider.length; i++) {
+              if (~filters.indexOf(res.provider[i])) {
+                _this.hasProvider = true;
+              }
+            }
+          }
+        },
+        fail: function fail(err) {
+          console.error('获取服务供应商失败：' + JSON.stringify(err));
+        } });
+
+    },
+    handleClick: function handleClick(e) {
+      uni.getProvider({
+        service: 'oauth',
+        success: function success(res) {
+          console.log(res);
+        } });
+
+      var type = e.currentTarget.dataset.type;
+      uni.login({
+        "provider": type,
+        success: function success(res) {
+          var openid = res.authResult.openid;
+          var access_token = res.authResult.access_token;
+        },
+        fail: function fail(err) {
+          console.log(err);
+        } });
+
+    } } };
+
+
+
+/*
+           export default {
+           	data(){
+           		return{
+           			
+           		};
+           	},
+           	methods:{
+           		router_res(){
+           			uni.navigateTo({
+           				url: '../regsister/res',
+           				success: res => {},
+           				fail: () => {},
+           				complete: () => {}
+           			})
+           		},
+           		formSubmit(e){
+           			let username = e.detail.value.username;
+           			let password = e.detail.value.password;
+           			
+           			uni.request({
+           				url:'http://localhost:3000/users/login',
+           				method:'POST',
+           				data:{
+           					"username":username,
+           					"password":password
+           				},
+           				success(res) {
+           					
+           					if(res.data.status == 200){
+           						let userInfo = res.data;
+           						console.log(userInfo)
+           						uni.setStorageSync('globalUser',userInfo);
+           						uni.switchTab({
+           							url:'../me/me'
+           						})
+           					}else if(res.data.status != 200){
+           						uni.showToast({
+           							title:res.data.msg,
+           							duration:2000,
+           							image:'../../static/images/login/error.png'
+           						})
+           					}
+           				},
+           				fail() {
+           					console.log("发送失败")
+           				}
+           			})
+           		}
+           	}
+           }*/exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
