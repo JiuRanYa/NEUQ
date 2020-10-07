@@ -97,7 +97,7 @@ var components = {
     return __webpack_require__.e(/*! import() | components/splitLine/splitLine */ "components/splitLine/splitLine").then(__webpack_require__.bind(null, /*! @/components/splitLine/splitLine.vue */ 47))
   },
   mySelection: function() {
-    return __webpack_require__.e(/*! import() | components/my-selection/my-selection */ "components/my-selection/my-selection").then(__webpack_require__.bind(null, /*! @/components/my-selection/my-selection.vue */ 76))
+    return __webpack_require__.e(/*! import() | components/my-selection/my-selection */ "components/my-selection/my-selection").then(__webpack_require__.bind(null, /*! @/components/my-selection/my-selection.vue */ 78))
   }
 }
 var render = function() {

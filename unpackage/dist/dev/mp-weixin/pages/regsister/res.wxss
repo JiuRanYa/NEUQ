@@ -46,8 +46,11 @@
 	width: 200rpx;
 	height: 60rpx;
 	border: 0px;
-	background-color: #FFFFFF;
+	background-color: #007AFF;
 	/* border-left: 1px solid #ccc; */
+}
+.auth_btn_hover{
+	background-color: #FFFFFF;
 }
 .item_title {
 	display: -webkit-box;

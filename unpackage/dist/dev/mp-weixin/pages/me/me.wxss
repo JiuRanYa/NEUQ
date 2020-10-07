@@ -52,7 +52,7 @@
 	font-size: 17px;
 }
 .nickname{
-	font-size: 19px;
+	font-size: 17px;
 	color: #777777;
 }
 .nav_info{

@@ -92,9 +92,10 @@ __webpack_require__.r(__webpack_exports__);
 global.getUserInfo = function (key) {
   var userInfo = uni.getStorageSync("globalUser");
   if (userInfo == '') {
-    console.log(userInfo + "userInfo");
+    console.log("userInfo为空");
     return null;
   } else {
+    console.log("userInfo存入缓存");
     console.log(userInfo);
     return userInfo;
   }

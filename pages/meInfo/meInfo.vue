@@ -119,9 +119,11 @@
 				uni.showToast({
 					title:'退出成功'
 				});
-				uni.switchTab({
-					url:'../me/me'
-				})
+				setTimeout(()=>{
+					uni.switchTab({
+						url:'../me/me'
+					})
+				},1500)
 			},
 		},
 		onShow(){

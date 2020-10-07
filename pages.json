@@ -40,6 +40,7 @@
 			"path": "pages/login/login",
 			"style": {
 				"app-plus": {
+					"titleNView": false //禁用原生导航栏
 				},
 				"navigationBarTextStyle": "white",
 				"navigationBarTitleText": "我的",

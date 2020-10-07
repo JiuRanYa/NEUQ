@@ -274,7 +274,7 @@ var _splitLine = _interopRequireDefault(__webpack_require__(/*! ../../components
 //
 //
 var _default = { comments: { splitLine: _splitLine.default }, data: function data() {var currentDate = this.getDate({ format: true });return { sex_options: ["男", "女"], index: 0, date: currentDate, userInfo: '' };}, computed: { startDate: function startDate() {return this.getDate('start');}, endDate: function endDate() {return this.getDate('end');} }, methods: { bindPickerChange: function bindPickerChange(e) {this.index = e.target.value;}, bindDateChange: function bindDateChange(e) {this.date = e.target.value;}, getDate: function getDate(type) {var date = new Date();var year = date.getFullYear();var month = date.getMonth() + 1;var day = date.getDate();if (type === 'start') {year = year - 60;} else if (type === 'end') {year = year + 2;}month = month > 9 ? month : '0' + month;;day = day > 9 ? day : '0' + day;return "".concat(year, "-").concat(month, "-").concat(day);}, //退出登录
-    clearStorage: function clearStorage() {uni.clearStorage();uni.showToast({ title: '退出成功' });uni.switchTab({ url: '../me/me' });} }, onShow: function onShow() {var userInfo = global.getUserInfo();this.userInfo = userInfo;} };exports.default = _default;
+    clearStorage: function clearStorage() {uni.clearStorage();uni.showToast({ title: '退出成功' });setTimeout(function () {uni.switchTab({ url: '../me/me' });}, 1500);} }, onShow: function onShow() {var userInfo = global.getUserInfo();this.userInfo = userInfo;} };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"], __webpack_require__(/*! ./../../../../plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),

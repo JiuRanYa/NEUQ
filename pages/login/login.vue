@@ -51,7 +51,7 @@
 	export default {
 			data() {
 				return {
-				hasProvider:false
+					hasProvider:false
 				};
 			}	,
 			onLoad(){
@@ -70,14 +70,18 @@
 							"password":password
 						},
 						success(res) {
-							
 							if(res.data.status == 200){
 								let userInfo = res.data;
 								console.log(userInfo)
 								uni.setStorageSync('globalUser',userInfo);
-								uni.switchTab({
-									url:'../me/me'
+								uni.showToast({
+									title:'登录成功'
 								})
+								setTimeout(()=>{
+									uni.switchTab({
+										url:'../me/me'
+									})
+								},1500)
 							}else if(res.data.status != 200){
 								uni.showToast({
 									title:res.data.msg,

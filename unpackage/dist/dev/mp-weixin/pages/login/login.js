@@ -202,14 +202,18 @@ var _default =
           "password": password },
 
         success: function success(res) {
-
           if (res.data.status == 200) {
             var userInfo = res.data;
             console.log(userInfo);
             uni.setStorageSync('globalUser', userInfo);
-            uni.switchTab({
-              url: '../me/me' });
+            uni.showToast({
+              title: '登录成功' });
 
+            setTimeout(function () {
+              uni.switchTab({
+                url: '../me/me' });
+
+            }, 1500);
           } else if (res.data.status != 200) {
             uni.showToast({
               title: res.data.msg,

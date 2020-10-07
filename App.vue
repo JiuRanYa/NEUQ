@@ -3,9 +3,10 @@
 global.getUserInfo = function(key){
 	let userInfo = uni.getStorageSync("globalUser")
 	if(userInfo == ''){
-		console.log(userInfo + "userInfo")
+		console.log("userInfo为空")
 		return null;
 	}else{
+		console.log("userInfo存入缓存")
 		console.log(userInfo)
 		return userInfo;
 	}
